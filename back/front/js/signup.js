@@ -109,7 +109,7 @@ async function signUp(event) {
 
   const config = {
     method: "post",
-    url: url + "/user",
+    url: url + "user",
     data: {
       email: currentEmail,
       password: currentPassword,

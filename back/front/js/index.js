@@ -10,7 +10,7 @@ async function setHeader() {
 
   const config = {
     method: "get",
-    url: url + "/jwt",
+    url: url + "jwt",
     headers: {
       "x-access-token": token,
     },

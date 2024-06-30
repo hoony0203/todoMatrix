@@ -138,7 +138,7 @@ async function updateTodoDone(e, token) {
 
   const config = {
     method: "patch",
-    url: url + "/todo",
+    url: url + "todo",
     headers: { "x-access-token": token },
     data: {
       todoIdx: todoIdx,
@@ -185,7 +185,7 @@ async function deleteTodo(e, token) {
   const todoIdx = e.target.closest("li").id;
   const config = {
     method: "delete",
-    url: url + `/todo/${todoIdx}`,
+    url: url + `todo/${todoIdx}`,
     headers: { "x-access-token": token },
   };
   try {
