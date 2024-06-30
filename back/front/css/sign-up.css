@@ -1,0 +1,49 @@
+main .inner {
+  height: 100%;
+}
+
+.sign-up-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-container h1 {
+  font-size: 2.5rem;
+}
+
+.sign-up-form {
+  width: 80%;
+  max-width: 30rem;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up-form input {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2;
+  padding-left: 1rem;
+  border: 3px solid var(--dark-gray);
+}
+
+div [class*="message"] {
+  color: red;
+  margin-bottom: 1rem;
+  visibility: hidden;
+}
+#sign-up {
+  padding-left: 0;
+  background-color: var(--main-blue);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#sign-up:hover {
+  background-color: var(--dark-blue);
+}
