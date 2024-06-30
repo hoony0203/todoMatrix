@@ -7,7 +7,7 @@ async function readTodo() {
   // 일정 조회 API 호출
   const config = {
     method: "get",
-    url: url + "/todos",
+    url: url + "todos",
     headers: { "x-access-token": token },
   };
   try {
@@ -107,7 +107,7 @@ async function createTodo(e, token) {
 
   const config = {
     method: "post",
-    url: url + "/todo",
+    url: url + "todo",
     headers: { "x-access-token": token },
     data: {
       contents: contents,
@@ -162,7 +162,7 @@ async function updateTodoContents(e, token) {
   const todoIdx = e.target.closest("li").id;
   const config = {
     method: "patch",
-    url: url + "/todo",
+    url: url + "todo",
     headers: { "x-access-token": token },
     data: {
       todoIdx: todoIdx,
