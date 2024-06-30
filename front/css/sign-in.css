@@ -1,0 +1,86 @@
+.blue {
+  color: var(--main-blue);
+}
+
+/* flex-box 활용 */
+/* main .inner {
+  height: 100%;
+}
+
+.sign-in-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black; 
+} 
+*/
+
+.sign-in-form {
+  width: 80%;
+  /* min-width: 30rem; */
+  max-width: 30rem;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-form input {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.sign-in-form input[type="text"] {
+  padding-left: 1rem;
+  border: 3px solid var(--dark-gray);
+}
+
+.sign-in-form input[type="password"] {
+  padding-left: 1rem;
+  border: 3px solid var(--dark-gray);
+}
+
+#sign-in {
+  background-color: var(--main-blue);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#sign-in:hover {
+  background-color: var(--dark-blue);
+}
+
+/* position 활용 */
+main {
+  position: relative;
+}
+
+.sign-in-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 기준점이 sign-in-container의 좌측 꼭지점이기 때문에 
+  가운데 위치시키기 위해 개체의 너비, 높이에 대해서 각각 -50%만큼 이동. */
+  text-align: center;
+}
+
+.sign-in-container h1 {
+  font-size: 2.5rem;
+}
+
+.sign-up-container {
+  width: 100%;
+  text-align: center;
+}
+
+#sign-up {
+  color: black;
+  font-size: 1.4rem;
+}

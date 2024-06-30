@@ -1,0 +1,112 @@
+:root {
+  --light-gray: #f4f4f4;
+  --main-blue: #4aa8d8;
+  --dark-gray: #606060;
+  --dark-blue: #22536b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@media only all and (max-width: 400px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+
+.blue {
+  color: var(--main-blue);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: var(--light-gray);
+}
+
+.header-container {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+.title a {
+  font-size: 2rem;
+  color: var(--main-blue);
+  font-weight: 900;
+}
+
+.unsigned {
+  display: flex;
+}
+.sign-container a {
+  font-size: 1.6rem;
+}
+
+.sign-in {
+  margin-right: 1rem;
+}
+
+.inner {
+  /* margin: 0 auto; */
+}
+
+@media only all and (min-width: 1200px) {
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  html {
+    font-size: 12px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* 회원용 헤더 : 드롭다운 */
+
+.drop-down {
+  position: relative;
+}
+
+.drop-down-button {
+  font-size: 1.4rem;
+}
+
+.drop-down-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.drop-down-content button {
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2;
+  background-color: var(--light-gray);
+  border: 1px solid var(--dark-gray);
+  cursor: pointer;
+}
+
+.drop-down-content button:hover {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.drop-down:hover .drop-down-content {
+  display: block;
+}

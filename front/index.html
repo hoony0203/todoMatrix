@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성공일정</title>
+
+    <!-- 메타 태그 설정, 저자, 키워드, 설명 -->
+    <meta name="author" content="임창훈" />
+    <meta
+      name="keyword"
+      content="성공일정, 아이젠하워 매트릭스, 일정관리, 업무 분배, 우선순위"
+    />
+    <meta
+      name="description"
+      content="아이젠하워 매트릭스, 중요도와 긴급성을 기준으로 우선 순위를 세워 성공 일정을 만듭니다."
+    />
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!-- 애플 파비콘 -->
+    <link rel="apple-touch-icon" href="./img/favicon.ico" type="image/x-icon" />
+
+    <!-- font-awesome-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/jumbotron.css" />
+    <link rel="stylesheet" href="./css/matrix.css" />
+  </head>
+  <body>
+    <!-- <i class="fa-solid fa-user"></i> -->
+    <header>
+      <div class="inner">
+        <div class="header-container">
+          <div class="title">
+            <a href="#">성공일정</a>
+          </div>
+          <div class="sign-container">
+            <!-- 비회원 -->
+            <div class="unsigned">
+              <div class="sign-in">
+                <a href="signIn.html">로그인</a>
+              </div>
+              <div class="sign-up">
+                <a href="signUp.html">회원가입</a>
+              </div>
+            </div>
+          </div>
+          <!-- 회원 -->
+          <div class="signed">
+            <div class="drop-down">
+              <div class="drop-down-button">
+                안녕하세요 <span class="nickname"></span>님
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="drop-down-content">
+                  <button id="sign-out">로그아웃</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="inner">
+        <div class="jumbotron-container">
+          <div class="jumbotron-item-main">
+            <div class="jumbotron-item-main-message">
+              <p>내 시간을 제대로 쓰고 싶다면,</p>
+              <h1>아이젠하워 매트릭스</h1>
+            </div>
+            <div class="jumbotron-item-main-image"></div>
+          </div>
+          <div class="jumbotron-item-sub">
+            <p>긴급성과 중요도를 기준으로 시간 관리를 하고,</p>
+            <p>일의 우선순위를 배분하는 방법입니다.</p>
+          </div>
+        </div>
+        <div class="matrix-container">
+          <div class="matrix-item" id="decide">
+            <div class="matrix-item-header">
+              <div class="matrix-title">📅 계획을 세워서 해야할 일</div>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="matrix-input"
+                placeholder="입력 후 엔터를 눌러주세요."
+              />
+            </div>
+            <ul class="matrix-item-list"></ul>
+          </div>
+          <div class="matrix-item" id="do">
+            <div class="matrix-item-header">
+              <div class="matrix-title">🏃🏃‍♀️ 지금 해야할 일</div>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="matrix-input"
+                placeholder="입력 후 엔터를 눌러주세요."
+              />
+            </div>
+            <ul class="matrix-item-list"></ul>
+          </div>
+
+          <div class="matrix-item" id="delegate">
+            <div class="matrix-item-header">
+              <div class="matrix-title">🏦 급하지만 중요도가 낮은 일</div>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="matrix-input"
+                placeholder="입력 후 엔터를 눌러주세요."
+              />
+            </div>
+            <ul class="matrix-item-list"></ul>
+          </div>
+          <div class="matrix-item" id="delete">
+            <div class="matrix-item-header">
+              <div class="matrix-title">🏌 최후순위</div>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="matrix-input"
+                placeholder="입력 후 엔터를 눌러주세요."
+              />
+            </div>
+            <ul class="matrix-item-list"></ul>
+          </div>
+          <span class="importance">중요도</span>
+          <span class="urgency">긴급성</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="inner">
+        <div class="footer-container">
+          <div class="author">개발자 : 임창훈</div>
+          <div class="author-email">이메일 : dummy@dummy.com</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/todo.js"></script>
+</html>
